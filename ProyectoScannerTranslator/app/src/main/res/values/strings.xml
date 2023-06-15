@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ProyectoScannerTranslator</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="imagenes">Imagenes</string>
+    <string name="pdf">PDF</string>
+</resources>

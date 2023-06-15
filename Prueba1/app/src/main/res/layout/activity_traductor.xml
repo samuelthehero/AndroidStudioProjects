@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Traductor">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/textoOrigen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/TextoIdioma"
+                android:layout_marginTop="50dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/opensans_bold"
+                android:minHeight="100dp"
+                android:gravity="start"/>
+
+            <TextView
+                android:id="@+id/TextoDestino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Spinner
+        android:id="@+id/IdiomaOrigen"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5sp"
+        android:layout_marginTop="16sp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginBottom="16sp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="165sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginBottom="16sp"
+        android:background="@drawable/button_redondeado"
+        app:icon="@drawable/baseline_translate_24"/>
+
+    <Spinner
+        android:id="@+id/IdiomaDestino"
+        android:tooltipText="english"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250sp"
+        android:layout_marginTop="16sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="16sp" />
+
+</RelativeLayout>
